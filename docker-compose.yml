@@ -1,7 +1,8 @@
 cfdocker:
-  image: bsweaver/cf-docker:v2
+  container_name: cfdocker
+  image: bsweaver/cf-docker:v4
   ports: 
-   - "8888:8888"
+   - "8080:80"
   volumes:
    - /var/log/lucee:/opt/lucee/server/lucee-server/context/logs
    - /var/log/lucee/tomcat:/usr/local/tomcat/logs
