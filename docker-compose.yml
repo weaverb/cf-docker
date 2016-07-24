@@ -1,5 +1,5 @@
-cf-docker:
-  image: bsweaver/cf-docker:latest
+cfdocker:
+  image: bsweaver/cf-docker:v2
   ports: 
    - "8888:8888"
   volumes:
