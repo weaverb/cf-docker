@@ -1,0 +1,7 @@
+cf-docker:
+  image: bweaver/cf-docker:latest
+  ports: 
+   - "8888:8888"
+  volumes:
+   - /var/log/lucee:/opt/lucee/server/lucee-server/context/logs
+   - /var/log/lucee/tomcat:/usr/local/tomcat/logs
